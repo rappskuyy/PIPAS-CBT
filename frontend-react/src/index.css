@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-slate-50 text-slate-900 font-sans; font-variant-numeric: tabular-nums; }
+
+/* Kelas-kelas kecil yang dipakai berulang, supaya JSX tidak panjang */
+.card { @apply bg-white border border-slate-200 rounded-2xl; }
+.btn { @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition disabled:opacity-40; }
+.btn-primary { @apply bg-blue-700 text-white hover:bg-blue-800; }
+.btn-outline { @apply bg-white border border-slate-200 hover:bg-slate-100; }
+.input { @apply w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-700/30; }
+.pill { @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold; }
